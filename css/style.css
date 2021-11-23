@@ -1,0 +1,193 @@
+:root{
+    --darkBackground: #1f2937;
+    --mainText: 48px bolder;
+    --secodaryText: 18px;
+    --logoSize: 24px;
+    --white: #f9faf8;
+    --white2: #e5e7eb;
+    --buttonBackground: #3882f6;
+    --greyBackground: #e5e7eb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+main{
+    background-color: var(--darkBackground);
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+header h1{
+    font-size: var(--logoSize);
+    color: var(--white);
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end
+}
+
+nav ul li{
+    margin-left: 16px;
+    color: var(--white2);
+    font-size: var(--secodaryText);
+}
+
+.main-section{
+    display: flex;
+    color: var(--white);
+    align-items: stretch;
+    padding: 100px 0;
+}
+
+.main-section div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section img{
+    width: 50%;
+}
+
+.main-section h2{
+    padding: 8px 0;
+    font: var(--mainText);
+} 
+.main-section p{
+    padding: 8px 0;
+    font-size: var(--secodaryText);
+    padding-right: 12px;
+}
+
+.main-section button{
+    background-color: var(--buttonBackground);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: var(--secodaryText);
+    align-self: flex-start;
+    margin-top: 30px;
+    transition: 1s ease;
+}
+
+.main-section button:hover{
+    background-color: rgba(56, 130, 246, .7);
+    transition: .8s ease;
+}
+
+#link2{
+    padding-bottom: 100px;
+}
+
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--darkBackground);
+}
+
+.info-wrapper h2{
+    font-size: 36px;
+    font-weight: bolder;
+    margin: 50px 0;
+}
+
+.info-wrapper div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#link2 figure{
+    width: 175px;
+    margin: 0 25px;
+}
+
+#link2 img{
+    border: 3px solid var(--buttonBackground);
+    border-radius: 8px;
+    width: 100%;
+}
+
+#link2 figcaption{
+    text-align: center;
+}
+
+#link3{
+    background-color: var(--greyBackground);
+    padding: 100px 0;
+}
+
+#link3 p{
+    font: 36px italic;
+    color: var(--darkBackground);
+}
+
+#link3 span{
+    display: block;
+    text-align: right;
+    font-size: var(--logoSize);
+    font-weight: bold;
+    color: var(--darkBackground);
+    margin-top: 10px;
+}
+
+.action-body{
+    background-color: var(--buttonBackground);
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+    padding: 50px 0;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.action-body button{
+    border: 2px solid var(--white);
+    background-color: var(--buttonBackground);
+    padding: 8px 26px;
+    border-radius: 6px;
+    color: var(--white);
+    font-size: 18px;
+    transition: .8s ease;
+    font-weight: bold;
+}
+
+.action-body button:hover{
+    background-color: var(--white);
+    color: var(--buttonBackground);
+    transition: .8s ease;
+}
+
+footer{
+    background-color: var(--darkBackground);
+    color: var(--white);
+    padding: 50px 0;
+}
+
+footer p{
+    text-align: center;
+}
